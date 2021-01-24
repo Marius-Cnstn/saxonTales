@@ -1,0 +1,53 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #8a0303;
+    text-align: center;
+    font-size: 85px;
+    margin-bottom: 20px;
+}
+
+body {
+    font-family: Lingming Manuscript;
+    background-image: url("/images/homepage.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.HouseOfWessex {
+    position: absolute;
+    top: 200px;
+    left: 800px;
+    width: 400px;
+}
+
+.HouseOfWessex img {
+    /*    filter: grayscale(100%);*/
+    border-radius: 30%;
+    width: 100%;
+}
+
+.historyClock{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 100px;
+}
+
+.historyClock img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}

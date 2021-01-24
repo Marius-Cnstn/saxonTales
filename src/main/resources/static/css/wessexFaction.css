@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h1{
+    color: #8a0303;
+    text-align: center;
+    font-size: 85px;
+    margin-bottom: 20px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Lingming Manuscript;
+    background-image: url("/images/westSeaxeClean.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size:cover;
+
+
+
+}
+.containerTitle {
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 1043px;
+    height: 180px;
+    left:80px;
+}
+
+.containerAll {
+    position: relative;
+    height:100%
+
+}
+
+.tableContainer {
+    background-image: url(/images/scroll3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 610px;
+    height: 210px;
+    left:1200px;
+    top:700px
+    /*    border-radius: 50%;*/
+
+}
+
+.tableItself {
+    /*    border: 1px solid black;*/
+    width:61%;
+    position: absolute;
+    left: 120px;
+    table-layout: fixed;
+    /*
+        border-top: double;
+        border-left: double;
+        border-right: double;
+    */
+    font-size: 25px;
+
+}
+
+td, th { border: 4px solid black;}
+
+.homesteadManagement {
+    position: absolute;
+    top: 320px;
+    width: 450px;
+    left: 50px;
+}
+
+.homesteadManagement img {
+    width: 100%;
+    max-height: 250px;
+    height: 250px;
+    filter: brightness(1.4);
+}
+
+.armyManagement {
+    position: absolute;
+    top: 320px;
+    width: 450px;
+    left: 550px;
+}
+
+.armyManagement img{
+    width: 100%;
+    max-height: 250px;
+    filter: brightness(2);
+}
+
+.budget {
+    position: relative;
+    top: 750px;
+    width: 175px;
+    height: 175px;
+    left: 830px;
+    background-image: url(/images/coinCroped2.png);
+}
+
+.budget img{
+    width: 100%;
+}
+
+.budget p {
+    color: black;
+    position: absolute;
+    top:73px;
+    left:35px;
+    font-size: 26px;
+}
+
+.season {
+    position: relative;
+    top: 520px;
+    width: 170px;
+    height: 167px;
+    left: 400px;
+    background-image: url(/images/seasonsCropped.png);
+}
+.season img {
+    width: 100%;
+}
+
+.season p {
+    color: black;
+    position: absolute;
+    top:70px;
+    left:0px;
+    font-size: 27px;
+    text-align: center;
+    width: 100%;
+}
+
+.endTurn {
+    position: relative;
+    top: 680px;
+    width: 80px;
+    height: 120px;
+    left: 100px;
+    background-image: url(/images/endTurnCrop3.png);
+}
+

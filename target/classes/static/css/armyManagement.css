@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #8a0303;
+    text-align: left;
+    font-size: 85px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Lingming Manuscript;
+    background-image: url("/images/armyManagementClean.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.container {
+    width: 1140px;
+    position: relative;
+}
+
+.recruitInfantryman {
+    position: absolute;
+    top: 70px;
+    width: 200px;
+    left: 1550px;
+}
+
+.recruitInfantryman img {
+    width: 100%;
+    max-height: 200px;
+    height: 200px;
+    filter: brightness(1.7);
+    border-radius: 50%;
+}
+
+.recruitCavalryman {
+    position: absolute;
+    top: 350px;
+    width: 200px;
+    left: 1550px;
+}
+
+.recruitCavalryman img {
+    width: 100%;
+    max-height: 200px;
+    height: 200px;
+    filter: brightness(1.4);
+    border-radius: 50%;
+}
+
+.recruitArcher {
+    position: absolute;
+    top: 640px;
+    width: 200px;
+    left: 1550px;
+
+}
+
+.recruitArcher img {
+    width: 100%;
+    max-height: 250px;
+    height: 200px;
+    filter: brightness(1.2);
+    border-radius: 50%;
+}
+
+.budget {
+    position: relative;
+    top: 650px;
+    width: 175px;
+    height: 175px;
+    left: 70px;
+    background-image: url(/images/coinCroped2.png);
+}
+
+.budget img{
+    width: 100%;
+}
+
+.budget p {
+    color: black;
+    position: absolute;
+    top:73px;
+    left:25px;
+    font-size: 26px;
+}
+
+.tableContainer {
+    /*    background-color: url(/images/scroll3.jpg);*/
+    position: absolute;
+    width: 850px;
+    height: 610px;
+    top: 150px;
+    left: 500px;
+    overflow-y: auto;
+
+}
+
+.tableItself {
+    /*    border: 1px solid black;*/
+    width:100%;
+    position: absolute;
+    table-layout: fixed;
+    font-size: 18px;
+    color: #8a0303;
+    background-image: url(/images/parchment.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+td, th {
+    border: 5px solid black;
+    border-style: outset;
+    text-align: center;
+}

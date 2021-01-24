@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link th:href="@{/css/homesteadManagement.css}" rel="stylesheet" />
+</head>
+
+<body>
+
+<h1> Homestead Management</h1>
+
+<div class="container">
+
+
+    <div class="buildPort">
+        <a th:href="@{/buildPort}">
+            <img src="/images/buildPortText2.jpg" alt="buildPortImage">
+        </a>
+    </div>
+
+
+    <div class="buildWorkshop">
+        <a th:href="@{/buildWorkshop}">
+            <img src="/images/buildWorkshopTest2.jpg" alt="buildWorkshopImage">
+        </a>
+    </div>
+
+    <div class="budget">
+        <p th:text="${budgetDetails.getBudget()} + ' coins'"> 10000 coins
+        </p>
+
+    </div>
+
+    <div class="tableContainer">
+
+        <table class="tableItself">
+            <tr>
+                <th> Id</th>
+                <th> Type</th>
+                <th> Level</th>
+                <th> Price</th>
+                <th> Income</th>
+                <th> Upgrade</th>
+
+            </tr>
+
+            <tr th:each="building:${buildingsList}">
+                <!--        for(UserEntity user : users) -->
+                <td th:text="${building.buildingId}"></td>
+                <td th:text="${building.buildingCathegory.getBuildingCathegoryName()}"></td>
+                <td th:text="${building.buildingLevel.getBuildingLevelName()}"></td>
+                <td th:text="${building.getBuildingAttributeList().get(0).getBuildingAttributeValue()}"></td>
+                <td th:text="${building.buildingAttributeList.get(1).getBuildingAttributeValue()}"></td>
+
+                <td th:if="${building.buildingCathegory.buildingCathegoryId == 1 and building.buildingLevel.buildingLevelId == 1}">
+                    <a th:href="@{'/upgradePortToDocks/' + ${building.buildingId}}"> Docks </a>
+                </td>
+
+                <td th:if="${building.buildingCathegory.buildingCathegoryId == 1 and building.buildingLevel.buildingLevelId == 2}">
+                    <a th:href="@{'/upgradeDocksToTradingPort/' + ${building.buildingId}}"> Trading Port </a>
+                </td>
+
+                <td th:if="${building.buildingCathegory.buildingCathegoryId == 2 and building.buildingLevel.buildingLevelId == 4}">
+                    <a th:href="@{'/upgradeWorkshopToForge/' + ${building.buildingId}}"> Forge </a>
+                </td>
+
+                <td th:if="${building.buildingCathegory.buildingCathegoryId == 2 and building.buildingLevel.buildingLevelId == 5}">
+                    <a th:href="@{'/upgradeWorkshopToArmourer/' + ${building.buildingId}}"> Armourer </a>
+                </td>
+
+                <!--        <td>-->
+                <!--            <a th:href="@{'/editUser/' + ${user.userId}}" th:text="#{index.user.table.header.action.edit.label}"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+                <!--            <a th:href="@{'/deleteUser/' + ${user.userId}}" th:text="#{index.user.table.header.action.delete.label}"></a>-->
+                <!--        </td>-->
+            </tr>
+        </table>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>House of Wessex</title>
+    <link th:href="@{/css/wessexFaction.css}" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+
+<div class="containerAll">
+
+    <div class="containerTitle">
+
+        <h1> House of Wessex </h1>
+
+        <div class="tableContainer">
+
+            <table class="tableItself">
+                <tr>
+                    <th> Leader name </th>
+                    <th> Economic bonus</th>
+                </tr>
+
+                <tr>
+                    <th th:text="${alfred.warlordFirstName + ' ' + alfred.warlordNickName}"> </th>
+                    <th th:text="${alfred.warlordEconomicBonus}"> </th>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class = "homesteadManagement">
+
+            <a th:href="@{/homesteadManagement}">
+                <img src="/images/homesteadManagement5.jpg" alt= "homesteadManagementImage">
+            </a>
+
+        </div>
+
+
+        <div class = "armyManagement">
+
+            <a th:href="@{/armyManagement}">
+
+                <img src="/images/armyManagement5.jpg" alt="armyManagement">
+
+            </a>
+        </div>
+
+
+        <div class="endTurn">
+            <a th:href="@{/endTurn}">
+                <img src="/images/endTurnCrop3.png" alt= "endTurn">
+            </a>
+        </div>
+
+        <div class="season">
+
+            <p th:text="${seasonYear.getSeason().getSeasonName()} + ' of ' + ${seasonYear.getYear()}"> Season + year </p>
+
+        </div>
+
+    </div>
+
+    <div class="budget">
+
+        <p th:text="${budgetDetails.getBudget()} + ' coins'"> budget
+
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lingming Manuscript;
+    background-image: url("/images/parchment.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.historyText {
+    font-size: 30px;
+    width: 75%;
+    text-align: justify;
+    float: left;
+    padding-right: 20px;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.container {
+    position: relative;margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.tribesDivision {
+    width: 420px;
+    position: absolute;
+    right: 0;
+    top: 670px;
+}
+
+.tribesDivision img {
+    width: 400px;
+}
+
+.tribesDivision span{
+    font-size: 30px;
+    text-align: right;
+}
+
+
+.daneLaw {
+    width: 420px;
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+
+.daneLaw img {
+    width: 400px;
+}
+
+.daneLaw span {
+    font-size: 30px;
+    text-align: right;
+}
+
+

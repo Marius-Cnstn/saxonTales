@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="SaxonTales 03.11.2020 - II" />
+        <module name="WarBand_Spring BOOT 05.10.2020" />
+        <module name="SaxonTales 03.11.2020" />
+        <module name="SaxonTales 02.11.2020 - II" />
+        <module name="WarBand_Spring BOOT" />
+        <module name="WarBand_Spring BOOT 07.10.2020" />
+        <module name="SaxonTales 22.10.2020" />
+        <module name="SaxonTales 02.11.2020" />
+        <module name="SaxonTales 28.10.2020 - II" />
+        <module name="SaxonTales 23.10.2020" />
+        <module name="SaxonTales 05.11.2020 - CSS" />
+        <module name="SaxonTales 21.12.2020 - CSS" />
+        <module name="SaxonTales 06.11.2020 - CSS" />
+        <module name="WarBand_Spring BOOT 02.10.2020" />
+        <module name="WarBand_Spring BOOT 30.09.2020" />
+        <module name="SaxonTales 21.10.2020" />
+        <module name="SaxonTales 03.11.2020 - III" />
+        <module name="WarBand_Spring BOOT 14.10.2020" />
+        <module name="SaxonTales 20.10.2020" />
+        <module name="SaxonTales 16.10.2020" />
+        <module name="SaxonTales 30.10.2020" />
+        <module name="SaxonTales 05.01.2021" />
+        <module name="SaxonTales 15.10.2020" />
+        <module name="SaxonTales 14.10.2020" />
+        <module name="SaxonTales 10.11.2020 - CSS" />
+        <module name="SaxonTales 13.11.2020 - CSS" />
+        <module name="Saxons_Spring BOOT 12.10.2020" />
+        <module name="SaxonTales_Spring BOOT 14.10.2020 - Copy" />
+        <module name="SaxonTales 23.10.2020 - II" />
+        <module name="SaxonTales 28.10.2020" />
+        <module name="SaxonTales 26.10.2020 - II" />
+        <module name="WarBand_Spring" />
+        <module name="SaxonTales 27.10.2020" />
+        <module name="SaxonTales 05.11.2020" />
+        <module name="SaxonTales 26.10.2020 - III" />
+        <module name="SaxonTales 26.10.2020" />
+        <module name="SaxonTales 09.11.2020 - CSS" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

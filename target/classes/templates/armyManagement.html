@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>armyManagement</title>
+    <link href= "/css/armyManagement.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="recruitInfantryman">
+        <a th:href="@{/recruitInfantryman}">
+            <img src= "/images/recruitInfantrymanScris.jpg" alt="recruitInfantrymanImage">
+        </a>
+    </div>
+
+    <div class="recruitCavalryman">
+        <a th:href="@{/recruitCavalryman}">
+            <img src= "/images/recruitCavalryScris.jpg" alt="recruitCavalrymanImage">
+        </a>
+    </div>
+
+    <div class="recruitArcher">
+        <a th:href="@{/recruitArcher}">
+            <img src= "/images/recruitArcherFinal.jpg" alt="recruitArcherImage">
+        </a>
+    </div>
+
+    <!--
+    <div>
+        <img src="" class="assignWarlordImage" alt="assignWarlordImage">
+        <div>
+            <a th:href="@{/assignWarlordtoArmy}" class="btn btn-primary" id="assignWarlordButton">Assign warlord</a>
+        </div>
+    </div>
+    -->
+
+    <div class="budget">
+        <p th:text="${budgetDetails.getBudget()} + ' coins'"> 10000 coins
+        </p>
+    </div>
+
+</div>
+
+<div class="tableContainer">
+
+    <table class="tableItself">
+        <tr>
+            <th> Id</th>
+            <th> Category</th>
+            <th> Upkeep </th>
+            <th> Weapon </th>
+            <th> Armor </th>
+            <th> Shield </th>
+            <th> Horse </th>
+            <th> Attack </th>
+            <th> Defense </th>
+            <th> Dismissal </th>
+            <!--        <th> Special Arrow </th>-->
+
+        </tr>
+
+        <tr th:each="soldier:${soldiersList}">
+            <!--        for(UserEntity user : users) -->
+            <td th:text="${soldier.soldierId}"></td>
+            <td th:text="${soldier.soldierCathegory.getSoldierCathegoryName()}"></td>
+            <td th:text="${soldier.personalAttributeList.get(1).soldierAttributeValue}"></td>
+
+            <td th:text="${soldier.equipmentList.get(0).getEquipmentType().equipmentTypeName}"></td>
+
+            <td th:text="${soldier.equipmentList.get(1).getEquipmentType().equipmentTypeName}"></td>
+
+            <td >
+            <span th:if="3 <= ${soldier.equipmentList.size()}"
+                  th:text="${soldier.equipmentList.get(2).getEquipmentType().equipmentTypeName}">
+            </span>
+
+                <span  th:unless="3 <= ${soldier.equipmentList.size()}"> NO </span>
+            </td>
+
+            <td >
+            <span th:if="4 <= ${soldier.equipmentList.size()}"
+                  th:text="${soldier.equipmentList.get(3).getEquipmentType().equipmentTypeName}">
+            </span>
+
+                <span  th:unless="4 <= ${soldier.equipmentList.size()}"> NO </span>
+            </td>
+
+            <td th:text="${soldier.attack}"></td>
+
+            <td th:text="${soldier.defense}"></td>
+
+            <td> <a th:href="@{'/dismissSoldier/' + ${soldier.soldierId}}"> Dismiss </a> </td>
+
+        </tr>
+
+    </table>
+
+</div>
+
+</body>
+
+</html>
